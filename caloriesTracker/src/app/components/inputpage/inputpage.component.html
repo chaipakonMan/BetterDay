@@ -1,0 +1,30 @@
+<!-- <div class="container-fluid">
+    <form class="form-inline">
+      <label for="inlineFormDay" class="m-2">Day #:</label>
+      <input type="number" class="form-control m-2" id="inlineFormDay" [(ngModel)]="dayNum" name="dayNum">
+      <label for="inlineFormCal" class="m-2">Calories:</label>
+      <input type="number" class="form-control m-2" id="inlineFormCal" [(ngModel)]="calOfDay" name="calOfDay">
+      <button class="btn btn-primary m-2" (click)="submit()">Submit</button>
+    </form>
+</div> -->
+
+<mat-card class="example-card">
+    <mat-card-header>
+      <mat-card-title>Daily Input</mat-card-title>
+      <mat-card-subtitle>Input Calories intake of the day. (ex. Day 1, 1700)</mat-card-subtitle>
+    </mat-card-header>
+
+    <mat-card-content>
+        <div class="container-fluid">
+            <form class="form-inline">
+              <label for="inlineFormDay" class="m-2">Day #:</label>
+              <input type="number" class="form-control m-2" id="inlineFormDay" [(ngModel)]="dayNum" name="dayNum">
+              <label for="inlineFormCal" class="m-2">Calories:</label>
+              <input type="number" class="form-control m-2" id="inlineFormCal" [(ngModel)]="calOfDay" name="calOfDay">
+            </form>
+        </div>
+    </mat-card-content>
+    <mat-card-actions>
+        <button class="btn btn-primary m-2" (click)="submit()">Submit</button>
+    </mat-card-actions>
+</mat-card>
